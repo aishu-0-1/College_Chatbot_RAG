@@ -1,10 +1,12 @@
 import streamlit as st
 from rag_engine import load_base, ask_rag
 st.set_page_config(page_title="SIET_Chatbot", layout="centered")
-st.title("SIET ChatBot")
-st.caption("Ask anything about college information, Courses, placement, FAQs, Rules and regulation")
-st.caption("RAG Pipeline with Mutiple files")
-st.caption("created by Aishwarya S M")
+
+
+st.title("Shridevi Institute of Engineering and Technology - ChatBot")
+st.caption("Ask anything about college information,Courses,Placements,FAQs,Rules and Regulations")
+st.caption("RAG Pipeline with Multiple files")
+st.caption("Created by Bhagirati S")
 
 mykey = st.secrets["GROQ_API_KEY"]
 
@@ -13,7 +15,6 @@ def intiate_rag():
     return load_base("college_docs")
 
 index, embed_model, chunks = intiate_rag()
-
 
 if "chat_hist" not in st.session_state:
     st.session_state.chat_hist = []
