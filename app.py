@@ -5,7 +5,7 @@ st.set_page_config(page_title="SIET_Chatbot", layout="centered")
 st.title("SIET ChatBot")
 st.caption("Ask anything about college information, Courses, placement, FAQs, Rules and regulation")
 st.caption("RAG Pipeline with Mutiple files")
-st.caption("Created by Aishwarya S M)
+st.caption("created by Aishwarya S M)
 
 mykey = st.secrets["GROQ_API_KEY"]
 
