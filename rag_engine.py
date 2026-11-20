@@ -5,6 +5,7 @@ from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
 from pathlib import path
 
+
 #load pdfs
 def load_pdf (pdf_path):
   reader = PdfReader(str(pdf_path))
